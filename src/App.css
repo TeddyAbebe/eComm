@@ -2,37 +2,118 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  color: #fff;
+}
+a:hover {
+  color: rgb(221, 248, 48);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  background-color: rgb(20, 36, 52);
+  color: aliceblue;
+  padding-top: 10px;
+  height: 50px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home {
+  margin-left: 40px;
+  margin-top: 5px;
+}
+.cart {
+  margin-right: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  float: right;
 }
 
-.App-link {
-  color: #61dafb;
+.search {
+  display: flex;
+  width: 40%;
+  padding: 5px;
+}
+.search input {
+  width: 100%;
+  padding: 5px;
+}
+.search button {
+  background-color: rgb(221, 248, 48);
+  margin-left: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.main {
+  padding-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main button {
+  padding: 1%;
+  border-radius: 10px;
+  background-color: rgb(221, 248, 48);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+.productContainer {
+  display: flex;
+}
+.productItem {
+  background-color: rgb(245, 245, 247);
+  border: solid 1px rgb(3, 92, 127);
+  margin: 20px;
+}
+.productItem img {
+  width: 100%;
+}
+
+.productItem button {
+  padding: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 3%;
+  border: solid 1px rgb(3, 92, 127);
+  border-radius: 5px;
+  background-color: rgb(221, 248, 48);
+  cursor: pointer;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.cart-page-container {
+  display: flex;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.cart-page-container table {
+  flex: 65%;
+  border-collapse: collapse;
+  background-color: rgb(245, 245, 247);
+
+}
+
+.cart-page-container table td {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+.price-details {
+  flex: 35%;
+  margin: 0px 30px;
+}
+.price-details .adjust-price {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px rgb(3, 92, 127);
+}
+.price-details .adjust-price span {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
 }
